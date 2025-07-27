@@ -17,14 +17,14 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = 'PATH HERE';
-const s_formId = 'ID HERE';
-const s_nameId = 'ID HERE';
-const s_websiteId = 'ID HERE';
-const s_textId = 'ID HERE';
-const s_pageId = 'ID HERE';
-const s_replyId = 'ID HERE';
-const s_sheetId = 'ID HERE';
+const s_stylePath = 'comment-widget.css';
+const s_formId = '1FAIpQLSd8ae8smstby9glEDde9cHfk-t7ICHftgBZUM3WxV3qzVzjpQ';
+const s_nameId = '456555297';
+const s_websiteId = '410471861';
+const s_textId = '907871344';
+const s_pageId = '641777982';
+const s_replyId = '1176357128';
+const s_sheetId = '1uOiefyLI04ix24DRyNJmnYUy7oc283EltEfDpu_6MuI';
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
@@ -51,7 +51,7 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
-const s_widgetTitle = 'Leave a comment!';
+const s_widgetTitle = 'type sum shit';
 const s_nameFieldLabel = 'Name';
 const s_websiteFieldLabel = 'Website (Optional)';
 const s_textFieldLabel = '';
