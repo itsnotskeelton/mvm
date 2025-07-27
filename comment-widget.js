@@ -17,7 +17,7 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = 'comment-widget.css';
+const s_stylePath = 'https://raw.githubusercontent.com/itsnotskeelton/mvm/main/comment-widget-dark.css';
 const s_formId = '1FAIpQLSd8ae8smstby9glEDde9cHfk-t7ICHftgBZUM3WxV3qzVzjpQ';
 const s_nameId = '456555297';
 const s_websiteId = '410471861';
