@@ -1,21 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('bg.gif') center center fixed;
+      background-size: cover;
+    }
+
+    #flicker-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* behind content but over background */
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
 <iframe width="1478" height="573" 
     src="https://www.youtube.com/embed/sACk31zhx08?loop=1&playlist=sACk31zhx08" 
-    title="The MOMO Song" 
+    title="The sigma Song" 
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     referrerpolicy="strict-origin-when-cross-origin" 
     allowfullscreen>
 </iframe>
 
-<p>ignore text below im required to have it there</p>
-<p> this websites hosted by itsnotskeleton yesssss</p>
+<p>This website's hosted by itsnotskeleton yesssss</p>
+
+<div id="c_widget"></div>
+<script src="comment-widget.js"></script>
+
+<div id="flicker-overlay"></div>
 
 <script>
-  const colors = ['#000', '#111', '#222', '#333', '#444', '#555', '#666', '#777', '#888', '#999', '#aaa', '#bbb', '#ccc'];
+  const colors = [
+    'rgba(0,0,0,0.2)', 'rgba(255,255,255,0.1)', 'rgba(0,0,0,0.3)',
+    'rgba(255,255,255,0.05)', 'rgba(0,0,0,0.1)', 'rgba(255,255,255,0.15)'
+  ];
   let i = 0;
+  const overlay = document.getElementById('flicker-overlay');
 
   setInterval(() => {
-    document.body.style.backgroundColor = colors[i % colors.length];
+    overlay.style.backgroundColor = colors[i % colors.length];
     i++;
-  }, 50); // flicker speed in milliseconds
+  }, 50);
 </script>
+
+</body>
+</html>
