@@ -7,7 +7,15 @@
     allowfullscreen>
 </iframe>
 
+<p>ignore text below im required to have it there</p>
 <p> this websites hosted by itsnotskeleton yesssss</p>
 
-<div id="c_widget"></div>
-<script src="comment-widget.js"></script>
+<script>
+  const colors = ['#000', '#111', '#222', '#333', '#444', '#555', '#666', '#777', '#888', '#999', '#aaa', '#bbb', '#ccc'];
+  let i = 0;
+
+  setInterval(() => {
+    document.body.style.backgroundColor = colors[i % colors.length];
+    i++;
+  }, 50); // flicker speed in milliseconds
+</script>
